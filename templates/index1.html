@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Pedidos</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Registro de Pedido</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome do Cliente</th>
+            <th>Pedido</th>
+            <th>Bebida</th>
+            <th>Endereço</th>
+            <th>Hora</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-nome">Nome</label>
+          <input id="m-nome" type="text" required autocomplete="off" />
+  
+          <label for="m-pedido">Pedido</label>
+          <input id="m-pedido" type="text" required autocomplete="off" />
+  
+          <label for="m-bebida">Bebida</label>
+          <input id="m-bebida" type="text" required autocomplete="off" />
+
+          <label for="m-endereço">Endereço</label>
+          <input id="m-endereço" type="text" required autocomplete="off" />
+
+          <label for="m-hora">Hora</label>
+          <input id="m-hora" type="time" required  />
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="../static/main.js"></script>
+  
+</body>
+
+</html>
